@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="index.css">
+    <title>Document</title>
+</head>
+<body>
+<div>
+    <div class="title">
+        <h1>Currency Converter</h1>
+    </div>
+    <form id="input-form">
+    <div class="container">
+        <div id="from-currency">
+            <h3>Currency</h3>
+            <input type="text" placeholder="currency" name="from-currency">
+        </div>
+        <div id="amount">
+            <h3>Amount</h3>
+            <input type="text" placeholder="amount" name="amount">
+        </div>
+        <div id="to-currency">
+            <h3>Fetch Exchange</h3>
+            <input type="text" placeholder="exchange" name="target-currency">
+        </div>
+    </div>
+
+    <div class="submit">
+        <input type="submit" name="submit" value="convert">
+    </div>
+
+    </form>
+
+    <div id="result"></div>
+</div>
+<script src="app.js"></script>
+
+</body>
+</html>
