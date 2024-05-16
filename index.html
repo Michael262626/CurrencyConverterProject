@@ -17,7 +17,13 @@
     <div class="container">
         <div id="from-currency">
             <h3>Currency</h3>
-            <input type="text" placeholder="currency" name="from-currency">
+<!--            <input type="text" placeholder="currency" name="from-currency">-->
+            <select name="myDropdown1" id="fromDropdown">
+                <option value="" disabled selected>search currency</option>
+                <option value="USD">USD</option>
+                <option value="NGN">NGN</option>
+                <option value="EUR">EUR</option>
+            </select>
         </div>
         <div id="amount">
             <h3>Amount</h3>
@@ -25,7 +31,12 @@
         </div>
         <div id="to-currency">
             <h3>Fetch Exchange</h3>
-            <input type="text" placeholder="exchange" name="target-currency">
+            <select name="myDropdown2" id="toDropdown">
+            <option value="" disabled selected>search currency</option>
+            <option value="USD">USD</option>
+            <option value="NGN">NGN</option>
+            <option value="EUR">EUR</option>
+            </select>
         </div>
     </div>
 

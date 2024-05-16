@@ -6,10 +6,13 @@ const converter = document.forms["input-form"];
 converter.addEventListener("submit", (event) => {
     event.preventDefault();
 
-    const sourceCurrency = document.getElementsByName("from-currency")[0].value;
-    const targetCurrency = document.getElementsByName("target-currency")[0].value;
+    const sourceCurrency = document.getElementsByName("myDropdown1")[0].value;
+    const targetCurrency = document.getElementsByName("myDropdown2")[0].value;
     let amount = parseFloat(document.getElementsByName("amount")[0].value);
-    if (isNaN(amount)) amount = 0.0;
+    if (isNaN(amount) || amount <= 0) {
+        amount = 0.0;
+        alert("Please enter a valid, positive amount.");
+    }
 
     const URL = `${API_URL}/${API_KEY}/latest/${sourceCurrency}`;
 
